@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="@string/welcome_notice"
+        android:textSize="30sp"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_welcome"
+        android:text="@string/notice"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/pre_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notice"
+        android:enabled="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/et_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_phone"
+        app:layout_constraintLeft_toRightOf="@+id/et_phone"
+        android:layout_marginLeft="2dp"
+        android:hint="@string/input_phone_notice"/>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone"
+        android:layout_marginTop="25dp"
+        android:hint="@string/input_code_notice"/>
+
+    <Button
+        android:id="@+id/send_code"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redius_button"
+        app:layout_constraintLeft_toRightOf="@+id/code"
+        app:layout_constraintTop_toTopOf="@+id/code"
+        android:layout_marginLeft="10dp"
+        android:alpha="1"
+        android:text="@string/send_code" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/redius_button"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="@string/login"
+        android:alpha="0.1"
+        android:textColor="@color/black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

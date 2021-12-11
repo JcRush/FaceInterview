@@ -3,6 +3,7 @@ package com.example.faceinterview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
@@ -49,9 +50,23 @@ public class SplashActivity extends AppCompatActivity {
      * 跳转到登录界面
      */
     private void toMainActivity(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent;
+        if(isLogin()){
+            intent = new Intent(this, MainActivity.class);
+        }else {
+            intent = new Intent(this, LoginActivity.class);
+        }
         startActivity(intent);
         finish();
+    }
+
+    /**
+     * 读取SP判断是否已经登陆
+     */
+    private boolean isLogin(){
+        SharedPreferences preferences = this.getSharedPreferences("login", MODE_PRIVATE);
+        boolean login = preferences.getBoolean("login", false);
+        return login;
     }
 
     @Override

@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">FaceInterview</string>
     <string name="skip">跳过</string>
+    <string name="welcome_notice">欢迎使用面面</string>>
+    <string name="notice">将使用手机号码作为帐户完成登陆/注册</string>>
+    <string name="pre_phone">+86</string>>
+    <string name="input_phone_notice">请输入手机号码</string>
+    <string name="input_code_notice">请输入验证码</string>>
+    <string name="send_code">发送验证码</string>
+    <string name="login">登陆</string>
 </resources>

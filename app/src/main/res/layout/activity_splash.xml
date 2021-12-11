@@ -15,13 +15,14 @@
     <Button
         android:id="@+id/splash_btn_skip"
         android:layout_height="42dp"
-        android:layout_width="70dp"
+        android:layout_width="100dp"
         android:text="@string/skip"
         android:textStyle="bold"
-        android:background="@color/gray"
+        android:background="@drawable/redius_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp"
+        android:alpha="0.6"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
