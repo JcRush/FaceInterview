@@ -49,7 +49,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/et_phone"
         app:layout_constraintLeft_toRightOf="@+id/et_phone"
         android:layout_marginLeft="2dp"
-        android:hint="@string/input_phone_notice"/>
+        android:hint="@string/input_phone_notice"
+        android:inputType="number"
+        android:lines="1"/>
 
     <EditText
         android:id="@+id/code"
@@ -58,7 +60,9 @@
         app:layout_constraintLeft_toLeftOf="@+id/et_phone"
         app:layout_constraintTop_toBottomOf="@+id/et_phone"
         android:layout_marginTop="25dp"
-        android:hint="@string/input_code_notice"/>
+        android:hint="@string/input_code_notice"
+        android:inputType="number"
+        android:lines="1"/>
 
     <Button
         android:id="@+id/send_code"
