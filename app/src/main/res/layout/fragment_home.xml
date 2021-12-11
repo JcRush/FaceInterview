@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/iv_hot_search"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@mipmap/hot_search"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <com.example.faceinterview.view.EditTextSearch
+            android:id="@+id/et_search"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner_search_box"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/add"
+            android:layout_toRightOf="@id/et_search"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
